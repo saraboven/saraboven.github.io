@@ -1,0 +1,12 @@
+
+body{
+  background-image: url('../Images/mapa1.jpg');
+}
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#mifoto{
+  margin-left:1%;
+}
