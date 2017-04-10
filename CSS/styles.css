@@ -1,24 +1,33 @@
 
-/*/body{
-  background-image: url('../Images/mapa1.jpg');*/
+
   body{
   background-image: url("../Images/bolamundo.jpeg");
 
-     /* Full height */
-
-     /* Center and scale the image nicely */
      background-position: top;
      background-repeat: no-repeat;
      background-size: cover;
-
-     :
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+     font-family:'Slabo 27px', serif;
+   }
+   #mifoto{
+   margin-left: 1%;
+   }
+   .lista1{
+     list-style-type: square;
    }
 h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: white
 }
-
+a{
+ text-decoration:none;
+ color:white;
+}
+.lista2{text-align: center;}
+.iconos{display: inline; margin-left:50px;}
 h2{
   color: white
 }
@@ -28,6 +37,5 @@ color: white
 table{
   color: white
 }
-#mifoto{
-  margin-left:1%;
-}
+.logotelefonica {margin-left: 75%}
+.logoadalab {margin-left: auto}
