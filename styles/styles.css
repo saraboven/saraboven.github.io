@@ -176,6 +176,22 @@ body {
 .project-container {
   margin-top: 30px; }
 
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px; }
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,6 +262,9 @@ a {
 .icon-social {
   width: 50px;
   margin-right: 20px; }
+
+.icons-contact {
+  margin-top: 30px; }
 
 footer {
   display: -webkit-box;
