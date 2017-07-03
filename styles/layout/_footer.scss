@@ -1,0 +1,30 @@
+
+footer {
+// margin-top: 20px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+height: 50px;
+
+}
+
+.icon-social {
+  width: 30px;
+  padding-right: 1%;
+}
+
+.text-footer {
+  color: #0A6A42;
+}
+
+@media (min-width:768px) {
+
+  footer {
+    justify-content: space-around;
+  }
+
+  .icon-social {
+    width: 50px;
+  }
+}

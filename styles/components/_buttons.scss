@@ -1,0 +1,25 @@
+
+.btn-menu{
+  border: none;
+  background-color: white;
+  padding: 8px;
+  width: 80px;
+  outline: none;
+  cursor:pointer;
+}
+
+.btn-menu-icon{
+  max-width: 100%;
+}
+
+.back-home{
+border-radius: 8%;
+padding: 5px;
+background-color: #BAF4DB
+}
+
+@media (min-width: $max-screen-size-tablet) {
+  .btn-menu{
+    display: none;
+  }
+}

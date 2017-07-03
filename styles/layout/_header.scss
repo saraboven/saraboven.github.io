@@ -1,0 +1,16 @@
+
+
+.header{
+  background-color: #BAF4DB;
+  width: 100%;
+  position: relative;
+  color: #207954;
+  font-weight: bold;
+}
+
+.header-content{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+}
