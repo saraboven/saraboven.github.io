@@ -1,7 +1,7 @@
 
 .btn-menu{
   border: none;
-  background-color: white;
+  background-color: transparent;
   padding: 8px;
   width: 80px;
   outline: none;
@@ -14,8 +14,13 @@
 
 .back-home{
 border-radius: 8%;
-padding: 5px;
-background-color: #BAF4DB
+padding: 2px;
+background-color: #BAF4DB;
+margin-right: 40px;
+}
+
+.home-img{
+width: 50px;
 }
 
 @media (min-width: $max-screen-size-tablet) {
