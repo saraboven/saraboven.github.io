@@ -1,0 +1,12 @@
+
+.nameSara,
+.tag-name {
+  animation: fadeFromTop 5s ;
+}
+
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0;
+  }
+  transform: translateY(-40%);
+}

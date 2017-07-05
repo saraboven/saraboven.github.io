@@ -2,6 +2,13 @@
 .nav{
   display: none;
 }
+@media (min-width: $max-screen-size-tablet) {
+
+  .nav{
+    display: flex;
+    list-style: none;
+  }
+}
 
 .nav-small{
   list-style: none;
@@ -33,12 +40,4 @@
 
 .nav-small-item:last-child{
   border-bottom: none;
-}
-
-@media (min-width: $max-screen-size-tablet) {
-
-  .nav{
-    display: flex;
-    list-style: none;
-  }
 }

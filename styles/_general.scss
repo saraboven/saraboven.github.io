@@ -1,14 +1,22 @@
 
 * {
-  box-sizing: border-box;
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-body{
+body {
+	background:url(../images/bolaMundo.jpeg); /* Nuestra imagen de fondo */
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+	font-family:helvetica, arial, sans-serif;
   color: $font-color;
   font-family: sans-serif;
-  margin: 0;
   height: 100vh;
-
+  // margin: 0;
 }
 
 h1{

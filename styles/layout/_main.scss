@@ -1,70 +1,42 @@
-* {
-	padding:0;
-	margin:0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+article {
+	width: 80%;
+	max-width:700px;
+	background-color: #BAF4DB;
+	padding:20px;
+	color:#0A6A42;
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+	margin-left: auto;
+  margin-right: auto;
 }
 
-body {
-	background:url(../images/bolaMundo.jpeg); /* Nuestra imagen de fondo */
-	background-repeat:no-repeat; /* Indicamos que no se repetira */
-	background-size:cover; /* Encajamos la imagen al 100% del ancho */
-	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
-	font-family:helvetica, arial, sans-serif;
-	// line-height:20px;
-}
-
-
-.flex{
-display: flex;
-margin-top: 200px;
-margin-bottom: 150px;
-align-items: center;
-background-color: transparent;
-width: 90%;
+.name-div{
+width: 75%;
 max-width:800px;
 margin-left: auto;
 margin-right: auto;
 }
 
+.about-me{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .photo{
-width: 200px;
+width: 150px;
 height: 100%;
+margin-top: 20px;
 margin-right: 10px;
 margin-left: 10px;
 }
 
-.nameSara{
-font-size: 3em;
-line-height: 1;
-color: #BAF4DB;
-text-shadow: 2px 2px;
-text-shadow: 1px 1px 2px black, 0 0 25px #40A279, 0 0 5px #2C835F;
-}
-
-.nameSara {
-  animation: fadeFromTop 5s ;
-}
-
-@keyframes fadeFromTop {
-  0% {
-    opacity: 0;
-  }
-  transform: translateY(-40%);
-}
-
-.container-about{
-width: 90%;
-max-width:800px;
-margin:auto;
+.about-container,
+.project-container{
 margin-top: 30px;
 border-radius: 10px;
 margin-bottom: 50px;
-}
-
-.project-container{
-margin-top: 30px;
 }
 
 .contact-container{
@@ -75,59 +47,43 @@ align-items: center;
 margin-top: 50px;
 }
 
-.about-me{
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-
-.text-about{
-display: flex;
-flex-direction: column;
-}
-
-.contenedor {
-	width: 90%;
-	max-width:800px;
-	margin:auto;
-  margin-bottom: 40px;
-}
-
-article {
-	background: #BAF4DB;
-	padding:20px;
-	margin:20px 0;
-	color:#0A6A42;
-	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-
-article h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
 .contact{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 20px;
 }
 
+.text-icon{
+padding: 3%;
+}
+
 .div-home{
 display: flex;
 justify-content: flex-end;
-padding: 2%;
+padding: 20px 0;
 }
 
 a{
 text-decoration: none;
 color:#0A6A42;
+margin: 0;
 }
 
+@media (min-width:768px) {
 
-.icons-contact{
-margin-top: 30px;
+	article {
+		width: 90%;
+		max-width:800px;
+	}
+
+	.photo{
+	width: 200px;
+	}
+
+	.about-me{
+	flex-direction: row;
+	}
+
 }

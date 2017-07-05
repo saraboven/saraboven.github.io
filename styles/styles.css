@@ -1,11 +1,21 @@
 * {
+  padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
+  background: url(../images/bolaMundo.jpeg);
+  /* Nuestra imagen de fondo */
+  background-repeat: no-repeat;
+  /* Indicamos que no se repetira */
+  background-size: cover;
+  /* Encajamos la imagen al 100% del ancho */
+  background-attachment: fixed;
+  /* Establecemos una posicion fija para la imagen */
+  font-family: helvetica, arial, sans-serif;
   color: #555555;
   font-family: sans-serif;
-  margin: 0;
   height: 100vh; }
 
 h1 {
@@ -30,9 +40,49 @@ p {
 @media (min-width: 768px) {
   p {
     margin-top: 5%; } }
+.nameSara {
+  font-size: 2.4em;
+  line-height: 1;
+  color: #BAF4DB;
+  margin-top: 150px;
+  text-shadow: 2px 2px;
+  text-shadow: 1px 1px 2px black, 0 0 25px #40A279, 0 0 5px #2C835F; }
+
+.tag-name {
+  color: #BAF4DB;
+  font-size: 1.2em;
+  padding: 10px 0;
+  margin-bottom: 150px; }
+
+article h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.text-about p {
+  margin-top: 20px; }
+
+.title-project {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+@media (min-width: 768px) {
+  .nameSara {
+    font-size: 3em;
+    margin-top: 130px; }
+
+  .tag-name {
+    margin-bottom: 130px; } }
 .nav {
   display: none; }
 
+@media (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; } }
 .nav-small {
   list-style: none;
   padding-left: 5 #6b8565 px;
@@ -61,12 +111,6 @@ p {
 .nav-small-item:last-child {
   border-bottom: none; }
 
-@media (min-width: 768px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none; } }
 .btn-menu {
   border: none;
   background-color: transparent;
@@ -75,6 +119,9 @@ p {
   outline: none;
   cursor: pointer; }
 
+@media (min-width: 768px) {
+  .btn-menu {
+    display: none; } }
 .btn-menu-icon {
   max-width: 100%; }
 
@@ -82,14 +129,14 @@ p {
   border-radius: 8%;
   padding: 2px;
   background-color: #BAF4DB;
-  margin-right: 40px; }
+  margin-right: 40px;
+  -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; }
 
 .home-img {
   width: 50px; }
 
-@media (min-width: 768px) {
-  .btn-menu {
-    display: none; } }
 .header {
   background-color: #BAF4DB;
   width: 100%;
@@ -109,76 +156,48 @@ p {
           align-items: center;
   border-bottom: 1px solid grey; }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+article {
+  width: 80%;
+  max-width: 700px;
+  background-color: #BAF4DB;
+  padding: 20px;
+  color: #0A6A42;
+  -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto; }
 
-body {
-  background: url(../images/bolaMundo.jpeg);
-  /* Nuestra imagen de fondo */
-  background-repeat: no-repeat;
-  /* Indicamos que no se repetira */
-  background-size: cover;
-  /* Encajamos la imagen al 100% del ancho */
-  background-attachment: fixed;
-  /* Establecemos una posicion fija para la imagen */
-  font-family: helvetica, arial, sans-serif; }
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 200px;
-  margin-bottom: 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  width: 90%;
+.name-div {
+  width: 75%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
 
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .photo {
-  width: 200px;
+  width: 150px;
   height: 100%;
+  margin-top: 20px;
   margin-right: 10px;
   margin-left: 10px; }
 
-.nameSara {
-  font-size: 3em;
-  line-height: 1;
-  color: #BAF4DB;
-  text-shadow: 2px 2px;
-  text-shadow: 1px 1px 2px black, 0 0 25px #40A279, 0 0 5px #2C835F; }
-
-.nameSara {
-  -webkit-animation: fadeFromTop 5s;
-          animation: fadeFromTop 5s; }
-
-@-webkit-keyframes fadeFromTop {
-  0% {
-    opacity: 0; }
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%); }
-
-@keyframes fadeFromTop {
-  0% {
-    opacity: 0; }
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%); }
-.container-about {
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
+.about-container,
+.project-container {
   margin-top: 30px;
   border-radius: 10px;
   margin-bottom: 50px; }
-
-.project-container {
-  margin-top: 30px; }
 
 .contact-container {
   display: -webkit-box;
@@ -196,52 +215,14 @@ body {
           align-items: center;
   margin-top: 50px; }
 
-.about-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.text-about {
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-
-.contenedor {
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 40px; }
-
-article {
-  background: #BAF4DB;
-  padding: 20px;
-  margin: 20px 0;
-  color: #0A6A42;
-  -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 10px; }
-
-article h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-  margin-top: 40px; }
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -250,6 +231,9 @@ article h2 {
           align-items: center;
   margin-top: 20px; }
 
+.text-icon {
+  padding: 3%; }
+
 .div-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,16 +241,28 @@ article h2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 2%; }
+  padding: 20px 0; }
 
 a {
   text-decoration: none;
-  color: #0A6A42; }
+  color: #0A6A42;
+  margin: 0; }
 
-.icons-contact {
-  margin-top: 30px; }
+@media (min-width: 768px) {
+  article {
+    width: 90%;
+    max-width: 800px; }
 
+  .photo {
+    width: 200px; }
+
+  .about-me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 footer {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,26 +272,42 @@ footer {
           flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px; }
+          justify-content: center; }
 
 .icon-social {
-  width: 30px;
-  padding-right: 1%; }
+  width: 50px;
+  padding-right: 5%; }
 
 .text-footer {
-  color: white; }
+  color: white;
+  padding: 2%; }
 
 @media (min-width: 768px) {
   footer {
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
   .icon-social {
-    width: 50px; } }
+    width: 60px; } }
+.nameSara,
+.tag-name {
+  -webkit-animation: fadeFromTop 5s;
+          animation: fadeFromTop 5s; }
+
+@-webkit-keyframes fadeFromTop {
+  0% {
+    opacity: 0; }
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%); }
+
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0; }
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%); }
 .hide {
   display: none; }
 
