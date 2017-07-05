@@ -13,35 +13,7 @@ body {
 	background-size:cover; /* Encajamos la imagen al 100% del ancho */
 	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
 	font-family:helvetica, arial, sans-serif;
-  color: $font-color;
+  color: $primary-font-color;
   font-family: sans-serif;
   height: 100vh;
-  // margin: 0;
-}
-
-h1{
-  text-align: center;
-  color: $font-color-title;
-  animation: animationTitle 5s ;
-}
-
-@keyframes animationTitle {
-  0% {
-    opacity: 0;
-  }
-}
-
-p{
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15%;
-}
-
-
-@media (min-width: $max-screen-size-tablet) {
-
-  p{
-    margin-top: 5%;
-  }
 }

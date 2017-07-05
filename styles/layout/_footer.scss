@@ -5,24 +5,23 @@ display: flex;
 flex-flow: row wrap;
 justify-content: center;
 }
+@media (min-width:$max-screen-size-tablet) {
+  footer {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.text-footer {
+  color: $light-color;
+  padding: 2%;
+}
 
 .icon-social {
   width: 50px;
   padding-right: 5%;
 }
-
-.text-footer {
-  color: white;
-  padding: 2%;
-}
-
-@media (min-width:768px) {
-
-  footer {
-    justify-content: space-around;
-    align-items: center;
-  }
-
+@media (min-width:$max-screen-size-tablet) {
   .icon-social {
     width: 60px;
   }

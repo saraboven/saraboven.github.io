@@ -2,88 +2,79 @@
 article {
 	width: 80%;
 	max-width:700px;
-	background-color: #BAF4DB;
+	background-color: $primary-background-color;
 	padding:20px;
-	color:#0A6A42;
+	color:$primary-font-color;
 	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+	border-radius: 10px;
 	margin-left: auto;
-  margin-right: auto;
+	margin-right: auto;
 }
-
-.name-div{
-width: 75%;
-max-width:800px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.about-me{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.photo{
-width: 150px;
-height: 100%;
-margin-top: 20px;
-margin-right: 10px;
-margin-left: 10px;
-}
-
-.about-container,
-.project-container{
-margin-top: 30px;
-border-radius: 10px;
-margin-bottom: 50px;
-}
-
-.contact-container{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
-}
-
-.contact{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 20px;
-}
-
-.text-icon{
-padding: 3%;
-}
-
-.div-home{
-display: flex;
-justify-content: flex-end;
-padding: 20px 0;
-}
-
-a{
-text-decoration: none;
-color:#0A6A42;
-margin: 0;
-}
-
-@media (min-width:768px) {
-
+@media (min-width:$max-screen-size-tablet) {
 	article {
 		width: 90%;
 		max-width:800px;
 	}
+}
 
-	.photo{
-	width: 200px;
-	}
+.name-div{
+	width: 75%;
+	max-width:800px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.about-me{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (min-width:$max-screen-size-tablet) {
 	.about-me{
-	flex-direction: row;
+		flex-direction: row;
 	}
+}
 
+.photo{
+	width: 150px;
+	height: 100%;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+@media (min-width:$max-screen-size-tablet) {
+	.photo{
+		width: 200px;
+	}
+}
+
+.about-container,
+.project-container{
+	margin-top: 30px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.text-visit{
+	padding: 3%;
+}
+
+.div-home{
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 0;
+}
+
+a{
+	text-decoration: none;
+	color:$primary-font-color;
+	margin: 0;
 }
