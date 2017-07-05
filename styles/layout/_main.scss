@@ -5,7 +5,7 @@ article {
 	background-color: $primary-background-color;
 	padding:20px;
 	color:$primary-font-color;
-	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+	box-shadow:0 5px 5px 3px $font-shadow-color;
 	border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -22,6 +22,10 @@ article {
 	max-width:800px;
 	margin-left: auto;
 	margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
 }
 
 .about-me{

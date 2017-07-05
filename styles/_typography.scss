@@ -2,28 +2,20 @@
 .nameSara{
 font-size: 2.4em;
 line-height: 1;
-color: $secundary-font-color;
-margin-top: 150px;
+color: $primary-font-color;
 text-shadow: 2px 2px;
 text-shadow: 1px 1px 2px black, 0 0 25px #40A279, 0 0 5px #2C835F;
 }
 @media (min-width:$max-screen-size-tablet) {
   .nameSara{
   font-size: 3em;
-  margin-top: 150px;
   }
 }
 
 .tag-name{
-color: $secundary-font-color;
+color: $primary-font-color;
 font-size: 1.2em;
 padding: 10px 0;
-margin-bottom: 150px;
-}
-@media (min-width:$max-screen-size-tablet) {
-  .tag-name{
-  margin-bottom: 130px;
-  }
 }
 
 article h2 {
